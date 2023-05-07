@@ -1,44 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# README
 
-## Available Scripts
+# Front-End-ART-CREA
+Repositório contendo a documentação e codificação do Front-End da solução da ART do CREA-CE 2023.
 
-In the project directory, you can run:
+## Introdução
+Este é um projeto de sistema Web que utiliza as tecnologias React Redux, Next, Tailwind, Javascript, MU, Axios, JWT de autenticação e Prisma como ORM.
 
-### `npm start`
+## Instalação
+Para instalar as dependências do projeto, utilize o comando:
+```
+npm install
+```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Configuração
+Antes de rodar o projeto, é necessário criar um arquivo `.env.local` na raiz do projeto, contendo as variáveis de ambiente necessárias. O arquivo deve ter o seguinte formato:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+DATABASE_URL=postgresql://user:password@host:port/database
+JWT_SECRET=mySecretKey
+```
 
-### `npm run test`
+- `DATABASE_URL` deve ser substituído com as informações de acesso ao banco de dados PostgreSQL utilizado pelo Prisma.
+- `JWT_SECRET` é uma chave secreta que será usada para a autenticação JWT.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Uso
+Para rodar o projeto em modo de desenvolvimento, utilize o comando:
+```
+npm run dev
+```
 
-### `npm run run build`
+Para rodar o projeto em modo de produção, utilize o comando:
+```
+npm run build
+npm start
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias utilizadas
+- React: Biblioteca Javascript para construir interfaces de usuário.
+- Redux: Biblioteca Javascript para gerenciar o estado da aplicação.
+- Next: Framework Javascript para construir aplicações web do lado do servidor.
+- Tailwind: Biblioteca CSS utilitária para estilização rápida e consistente.
+- MU: Biblioteca Javascript para implementação de UI components.
+- Axios: Biblioteca Javascript para fazer requisições HTTP.
+- JWT: Biblioteca Javascript para autenticação baseada em tokens.
+- Prisma: ORM para interação com banco de dados PostgreSQL.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Contribuição
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licença
+Este projeto está licenciado sob a Licença Creative Commons Zero v1.0 Universal. Consulte o arquivo LICENSE para obter mais informações.
